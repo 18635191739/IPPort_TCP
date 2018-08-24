@@ -28,11 +28,11 @@ public class ProgramEntry {
                     }
                     break;
                 case "C":
-                    if (args.length == 3) {
-                        IPPortClient ippc = new IPPortClient(args[1], args[2]);
+                    if (args.length == 5) {
+                        IPPortClient ippc = new IPPortClient(args[1], args[2],args[3],args[4]);
                         ippc.StartClient();
                     } else {
-                        IPPortClient ippc = new IPPortClient(null, null);
+                        IPPortClient ippc = new IPPortClient(null, null,null,null);
                         ippc.StartClient();
                     }
                     break;

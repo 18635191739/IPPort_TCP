@@ -17,6 +17,7 @@ public class ProgramEntry {
 
     public static void verCppTest20180821(String[] args) { //建立返回IP&PORT的服务器，连接后向客户端返回其公网ip&port
         if (args.length > 0) {
+            System.out.println("args:"+args.length);
             switch (args[0]) {
                 case "S":
                     if (args.length == 2) {

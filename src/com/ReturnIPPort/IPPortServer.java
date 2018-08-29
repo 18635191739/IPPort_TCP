@@ -87,7 +87,7 @@ public class IPPortServer {
                             counter++;
                             if (sendPenetrationCommand) {
                                 Writer out = new OutputStreamWriter(connection.getOutputStream());
-                                out.write("Address:" + secondAddress);
+                                out.write("Address:" + secondAddress);//打洞命令：Address:IP:port
                                 out.flush();
                                 System.out.println("向客户端发送打洞命令" + new Date().toString());
                                 sendPenetrationCommand = false;//重置打洞命令标志
